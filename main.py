@@ -31,6 +31,7 @@ player_gravity = 0
 
 # Intro screen
 player_stand = pygame.image.load("graphics/player/player_stand.png").convert_alpha()
+player_stand = pygame.transform.rotozoom(player_stand, 0, 2)
 player_stand_rect = player_stand.get_rect(center = (400, 200))
 
 while True:

@@ -105,7 +105,7 @@ snail_animation_timer = pygame.USEREVENT + 2
 pygame.time.set_timer(snail_animation_timer, 500)
 
 fly_animation_timer = pygame.USEREVENT + 3
-pygame.time.set_timer(fly_animation_timer, 300)
+pygame.time.set_timer(fly_animation_timer, 200)
 
 while True:
     for event in pygame.event.get():
@@ -140,7 +140,6 @@ while True:
                 if fly_frame_index == 0: fly_frame_index = 1
                 else: fly_frame_index = 0
                 fly_surf = fly_frames[fly_frame_index]
-
 
     if game_active:
         screen.blit(sky_surface, (0, 0))
